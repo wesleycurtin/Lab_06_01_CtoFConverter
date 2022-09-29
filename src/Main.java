@@ -15,15 +15,13 @@ public class Main
         if(in.hasNextDouble()) {
             c = in.nextDouble();
             in.nextLine();
+            f = (c * 1.8) + 32;
+            System.out.println("Your temperature " + c + " to Fahrenheit is " + f);
         }
         else {
             trash = in.nextLine();
             System.out.println("\nYou said the temperature was: " + trash + ". That is not a valid temperature!");
         }
-
-        f = (c * 1.8) + 32;
-        System.out.println("Your temperature " + c + " to Fahrenheit is " + f);
-
 
 
 
